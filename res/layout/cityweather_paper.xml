@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/head_set"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/backhead"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/city_head"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="15dp"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:textSize="19dp" />
+
+        <Button
+            android:id="@+id/delete_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/delete_selector"
+            android:gravity="right" />
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpaper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/head_set"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:id="@+id/bottom_set"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/backhead"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/tomorrow_btn"
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/weather_icon_1" />
+
+        <ImageButton
+            android:id="@+id/tip_btn"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/tip_icon" />
+
+        <ImageButton
+            android:id="@+id/set_btn2"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/refresh_icon" />
+
+        <ImageButton
+            android:id="@+id/set_btn5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/setting_icon_l" />
+
+    </LinearLayout>
+
+</RelativeLayout>
